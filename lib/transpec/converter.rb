@@ -87,7 +87,7 @@ module Transpec
     end
 
     def process_double(double)
-      double.convert_to_double! if config.convert?(:deprecated)
+      double.convert_to_double! if config.convert?(:rr) && config.convert?(:deprecated)
     end
 
     def process_method_stub(method_stub)

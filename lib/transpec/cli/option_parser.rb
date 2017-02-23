@@ -133,6 +133,7 @@ module Transpec
             "  *its* (to `describe '#attr' { subject { }; it { } }`)",
             '  *pending* (to `skip`)',
             '  *deprecated* (all other deprecated syntaxes to latest syntaxes)',
+            '  *rr* (mock(obj)/stub(obj) to double(obj))',
             'These conversions are enabled by default.'
           ],
           '-v' => [

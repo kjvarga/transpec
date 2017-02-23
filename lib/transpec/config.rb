@@ -25,7 +25,8 @@ module Transpec
           deprecated: true,
        example_group: false,
           hook_scope: false,
-      stub_with_hash: false # to allow(obj).to receive(:message).and_return(value) prior to RSpec 3
+      stub_with_hash: false, # to allow(obj).to receive(:message).and_return(value) prior to RSpec 3
+                  rr: false
     }.freeze
 
     PREDICATES.each do |predicate, _|
